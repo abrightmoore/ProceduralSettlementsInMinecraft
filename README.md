@@ -5,7 +5,7 @@ Development log and examples here: https://twitter.com/TheWorldFoundry/status/10
 
 This is a procedural settlement generation framework for Minecraft's external community tool called "MCEdit".
 
-For more information and alternate approachs, see the [Generative Design in Minecraft](https://twitter.com/GenDesignMC) project.
+For more information and alternate approaches, see the [Generative Design in Minecraft](https://twitter.com/GenDesignMC) project.
 
 You can extend the framework by creating your own structure generator. See supplied example "House.py" and "TownSquare.py". Just change the 'chosenVariant' list to include your generator by name. Your file goes in the filters directory alongside the filter STARTPROC_v1.py
 
