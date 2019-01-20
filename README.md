@@ -1,4 +1,4 @@
-# ProceduralSettlementsInMinecraft
+# Procedural Settlements in Minecraft
 [Contact the author](@TheWorldFoundry)
 
 Development log and examples here: https://twitter.com/TheWorldFoundry/status/1086794617972973568
