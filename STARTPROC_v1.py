@@ -13,7 +13,7 @@ import PROCGEN_TOOLS
 
 inputs = (
 		("STARTPROC", "label"),
-		("Generator Name",("string","value=Settlement_v2")),
+		("Generator Name",("string","value=Settlement_v4")),
 		("adrian@TheWorldFoundry.com", "label"),
 		("http://theworldfoundry.com", "label"),
 		)
