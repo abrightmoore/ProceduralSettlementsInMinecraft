@@ -25,7 +25,7 @@ def create(generatorName,level,areas):
 		if availableFlag == True: # Confirm we're allowed to use it
 			log("Generating a "+generatorName+" at "+str(box)) # Informational to show we found a plot to build in
 			width,height,depth = getDimensionsFromBox(box) # Find out how much space we've been given
-			if width > 16 and depth > 16: # Minimum viable generation space
+			if width >= 16 and depth >= 16: # Minimum viable generation space
 				cx = width>>1 # Pre-calculate the centre via halving through a bit shift
 				cz = depth>>1 # Pre-calculate the centre via halving through a bit shift
 				
