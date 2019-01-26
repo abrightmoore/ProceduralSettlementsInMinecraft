@@ -51,7 +51,7 @@ def create(generatorName,level,areas):
 									material = STONEBRICKS # Wall
 								else: # Inside the wall within a room. Put a floor at this offset
 									if y%FLOORHEIGHT == 1: material = WOODPLANKS
-								if y == 0 or (material != AIR and randint(1,10) == 1): material = COBBLESTONE # Bottom layer cobblestone which is allows us to pack in empty space below
+								if y == 0 or (material != AIR and width > 16 and randint(1,10) == 1): material = COBBLESTONE # Bottom layer cobblestone which is allows us to pack in empty space below
 								
 								setBlock(level,box.minx+x,box.miny+y,box.minz+z,material) # Clear the block from this position regardless of what it is
 				# Draw the roof, if this tower has one

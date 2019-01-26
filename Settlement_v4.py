@@ -14,14 +14,16 @@ def create(generatorName,level,areas):
 	MEDIUM = 16
 	LARGE = 32
 		
-	settlementA = ["House","House","House","TownSquare","Tower"] #["TownSquare","TownHall","Farm","House"] # Add any generator types here
+	settlementA = ["House","FarmLand","House","TownSquare","Tower"] #["TownSquare","TownHall","Farm","House"] # Add any generator types here
 	for i in xrange(0,randint(30,100)):
-		if randint(1,10) > 9:
+		randval = randint(1,10)
+		if randval == 1:
 			settlementA.append("Tower")
-		else:
+		if randval == 2:
 			settlementA.append("House")
-	settlementB = settlementA #["House","House","Farm","Farm","TownSquare","TownHall","Farm","Farm"] # Add any generator types here
-	settlements = [settlementA,settlementB] # In reality you'll mix this up with different blueprints
+		else:
+			settlementA.append("FarmLand")
+	settlements = [settlementA] # In reality you'll mix this up with different blueprints, probably based on biome type
 	
 	# Optional: Check bounds and whether we can do anything
 	
